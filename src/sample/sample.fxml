@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="976.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <CheckBox fx:id="checkBox" layoutX="34.0" layoutY="316.0" mnemonicParsing="false" onAction="#weightAllow" prefHeight="17.0" prefWidth="124.0" text="Одинаковые веса" />
+   <TextArea fx:id="textArea1" layoutX="34.0" layoutY="105.0" prefHeight="200.0" prefWidth="225.0" />
+   <TextArea fx:id="textArea2" layoutX="269.0" layoutY="105.0" prefHeight="200.0" prefWidth="225.0" />
+   <TextArea fx:id="textArea3" layoutX="554.0" layoutY="105.0" prefHeight="76.0" prefWidth="358.0" />
+   <Label layoutX="34.0" layoutY="80.0" text="Введите матрицу W" />
+   <Label layoutX="269.0" layoutY="80.0" text="Введите матрицу V" />
+   <TextField fx:id="textField" layoutX="34.0" layoutY="43.0" prefHeight="25.0" prefWidth="461.0" />
+   <Label layoutX="34.0" layoutY="14.0" text="Введите вектор" />
+   <Spinner fx:id="applyWeight" amountToStepBy="1" disable="true" initialValue="1" layoutX="34.0" layoutY="358.0" max="10" min="1" onMouseClicked="#fillMatrix" prefHeight="25.0" prefWidth="124.0" />
+   <Button fx:id="clear" layoutX="556.0" layoutY="193.0" mnemonicParsing="false" onAction="#clear" text="Очистить" />
+   <Button fx:id="calculate" layoutX="634.0" layoutY="193.0" mnemonicParsing="false" onAction="#calculate" text="Выполнить расчет" />
+   <Label layoutX="554.0" layoutY="80.0" text="Вывод" />
+   <Label layoutX="519.0" layoutY="108.0" text="NET1" />
+   <Label layoutX="519.0" layoutY="125.0" text="OUT1" />
+   <Label layoutX="519.0" layoutY="142.0" text="NET2" />
+   <Label layoutX="519.0" layoutY="159.0" text="OUT2" />
+   <Button fx:id="zero" layoutX="269.0" layoutY="312.0" mnemonicParsing="false" onAction="#fillZero" text="Заполнить нулями" />
+   <Spinner fx:id="size" amountToStepBy="1" initialValue="1" layoutX="395.0" layoutY="312.0" max="10" min="1" prefHeight="25.0" prefWidth="99.0" />
+</AnchorPane>
